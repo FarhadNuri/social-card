@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-800 font-outfit
+}
+
+button {
+  @apply cursor-pointer
+}
