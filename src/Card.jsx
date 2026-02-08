@@ -18,35 +18,36 @@ function Card () {
                    
                      />
                 </div>
-                <div className="mt-5 mb-3.5 text-center max-w-[444px] space-y-1.5">
+                <div className="mt-5 mb-3.5 text-center max-w-111 space-y-1.5">
                     <h1 className="text-3xl font-bold">Farhad Nuri</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, beatae facere adipisci animi quis quam magni et maiores omnis tenetur.</p>
+                    <p>Full Stack Developer with strong problem-solving skills. Proficient in React, TypeScript, Next.js, Node.js, MongoDB, Neon, and Prisma. Passionate about large scale system design.</p>
 
                 </div>
                 <ul className="flex items-center gap-2.5">
                     {socialIcons.map((item) => (
                         <li key={item.id} className="group">
-                            <button className="w-10 h-10 bg-sky-600 text-white flex items-center justify-center rounded-full
+                            <a href={item.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-sky-600 text-white flex items-center justify-center rounded-full
                             hover:opacity-80 transition-opacity
                             group-nth-[1]:bg-blue-600
                              group-nth-[2]:bg-black
                              group-nth-[3]:bg-blue-700
-                             group-nth-[4]:bg-pink-600"
+                             group-nth-[4]:bg-green-500"
                              title={item.label}>
                                 <item.icon />
-                            </button>
+                            </a>
                         </li>
                     ))}
                 </ul>
                 <ul className="grid gap-3 my-8">
                     {listItems.map((item) => (
-                        <li key={item.id} className="border-zinc-300 border flex items-center justify-between 
-                        p-1.5 gap-8 sm:gap-16 lg:gap-[149px] rounded-full pl-8
-                        hover:bg-zinc-900 transition-colors hover:text-white">
+                        <a key={item.id} href={item.url} target="_blank" rel="noopener noreferrer"
+                        className={`border-zinc-300 border flex items-center justify-between 
+                        p-1.5 gap-8 sm:gap-16 lg:gap-37.25 rounded-full pl-8
+                        hover:bg-zinc-900 transition-colors hover:text-white ${!item.url && 'pointer-events-none opacity-50'}`}>
                             <p className="font-bold">{item.label}</p>
-                        <button className="w-12 h-12 bg-neutral-200 flex items-center justify-center rounded-full
-                        text-zinc-700"><RiArrowRightUpLine /></button>
-                        </li>
+                        <span className="w-12 h-12 bg-neutral-200 flex items-center justify-center rounded-full
+                        text-zinc-700"><RiArrowRightUpLine /></span>
+                        </a>
                     ))}
                 </ul>
             </div>
