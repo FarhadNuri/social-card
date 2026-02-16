@@ -1,6 +1,6 @@
 import React from "react";  
-const bgImage = "/social-images/cfProfile.png";
-const profileImage = "/social-images/CSW11.png";
+const bgImage = `${import.meta.env.BASE_URL}social-images/cfProfile.png`;
+const profileImage = `${import.meta.env.BASE_URL}social-images/CSW11.png`;
 import { socialIcons, listItems } from "./constant/data";
 
 import { RiArrowRightUpLine } from "@remixicon/react";

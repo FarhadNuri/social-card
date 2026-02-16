@@ -36,7 +36,7 @@ export const listItems = [
   {
     id:1,
     label: "Visit my Portfolio",
-    url: "https://farhadnuri.github.io/final-portfolio/",
+    url: "https://farhadnuri.github.io/me/",
   },
   {
     id:2,
