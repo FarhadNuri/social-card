@@ -36,7 +36,7 @@ export const listItems = [
   {
     id:1,
     label: "Visit my Portfolio",
-    url: "https://farhadnuri.github.io/me/",
+    url: "https://farhadnuri.vercel.app/",
   },
   {
     id:2,
